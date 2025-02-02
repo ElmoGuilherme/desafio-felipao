@@ -1,26 +1,22 @@
-let nomeHeroi = "Zeus";
-let vitoriaHeroi = 65;
-let derrotaHeroi = 35;
-let resultado = subtracao(vitoriaHeroi, derrotaHeroi);
+let nomeHeroi = "Mag";
+let xpHeroi = 891;
+let nivelHeroi;
 
-function subtracao(vitoriaHeroi, derrotaHeroi){
-    let resultado = vitoriaHeroi - derrotaHeroi;
-    return resultado;
-}
-
-if (resultado <= 10){    
+if (xpHeroi <= 1000){    
     nivelHeroi = "Ferro";
-}else if (resultado >=11 && resultado <= 20){
+}else if (xpHeroi >=1001 && xpHeroi <= 2000){
     nivelHeroi = "Bronze";
-}else if (resultado >=21 && resultado <= 50){
+}else if (xpHeroi >=2001 && xpHeroi <= 5000){
     nivelHeroi = "Prata";
-}else if (resultado >= 51 && resultado <= 80){
+}else if (xpHeroi >= 5001 && xpHeroi <= 7000){
     nivelHeroi = "Ouro";
-}else if (resultado >= 81 && resultado <= 90){
-    nivelHeroi = "Diamante";
-}else if (resultado >= 91 && resultado <= 100){
-    nivelHeroi ="Lendário";
-}else if (resultado >= 101){
+}else if (xpHeroi >= 7001 && xpHeroi <= 8000){
+    nivelHeroi = "Platina";
+}else if (xpHeroi >= 8001 && xpHeroi <= 9000){
+    nivelHeroi ="Ascendente";
+}else if (xpHeroi >= 9001 && xpHeroi <= 10000){
     nivelHeroi = "Imortal";
+}else if (xpHeroi >= 10001){
+    nivelHeroi = "Radiante";
 }
-console.log("O Herói de nome " + nomeHeroi + " tem o saldo de " + resultado + " vitórias e está no nível de " + nivelHeroi);
+console.log("O Herói de nome " + nomeHeroi + " está no nível de " + nivelHeroi);
